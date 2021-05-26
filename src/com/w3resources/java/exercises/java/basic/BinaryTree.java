@@ -1,11 +1,29 @@
 package com.w3resources.java.exercises.java.basic;
 
+/**
+ * @author grimm
+ *
+ */
 public class BinaryTree {
 	// Originally created for Basic125
 	public Node root;
 
 	public BinaryTree() {
 		root = null;
+	}
+	
+	public int get_depth(Node node) {
+		if (node == null) {
+			return 0;
+		}
+		int depthLeft = get_depth(node.left);
+		int depthRight = get_depth(node.right);
+		int deeper = Math.max(depthLeft, depthRight);
+		return deeper + 1;
+	}
+	
+	public int get_depth() {
+		return get_depth(root);
 	}
 	
 	public void print_preorder(Node node) {
