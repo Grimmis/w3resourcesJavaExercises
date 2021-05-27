@@ -25,7 +25,7 @@ public class Basic138 {
 		}
 		Result: "cat", "dog", "red"
 	 */
-	private static String[] findLongestWordInHashMap(String[] dict) {
+	private static String[] findLongestWordInStringArr(String[] dict) {
 		ArrayList<String> longestStrings = new ArrayList<>();
 		longestStrings.add("");
 		for (String s : dict) {
@@ -45,7 +45,7 @@ public class Basic138 {
 	
 	private static void print138(String[] dict) {
 		System.out.println("Result: ");
-		String[] longest = findLongestWordInHashMap(dict);
+		String[] longest = findLongestWordInStringArr(dict);
 		for (String s : longest) {
 			System.out.println(s);
 		}
