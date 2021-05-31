@@ -12,7 +12,6 @@ public class Basic140 {
 		8 10
 		15 20
 	 */
-	
 	private static ArrayList<Interval> mergeIntervals(ArrayList<Interval> inputArrayList) {
 		ArrayList<Interval> workingArrayList = new ArrayList<>(inputArrayList);
 		int n = workingArrayList.size();
